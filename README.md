@@ -118,12 +118,13 @@ Testes
 
 O projeto utiliza **Moto** para simular o ambiente AWS sem gerar custos ou necessidade de conexão.
 
-### Instalar dependências de teste
+### Instalar dependências para rodar os testes
 
 Bash
 
 ```
-pip install boto3 moto requests
+cd src
+pip install -r requirements.txt
 
 ```
 
@@ -132,6 +133,7 @@ pip install boto3 moto requests
 Bash
 
 ```
+cd app
 python -m unittest discover tests
 
 ```
