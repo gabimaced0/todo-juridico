@@ -1,0 +1,141 @@
+type: collection.insomnia.rest/5.0
+name: ToDo Juridico
+meta:
+  id: wrk_157c1c8f87f44c608aaf2bdfbea90d7d
+  created: 1770154227350
+  modified: 1770154227350
+collection:
+  - url: https://clys7m3he2.execute-api.sa-east-1.amazonaws.com/tasks/id
+    name: Alterar tarefa
+    meta:
+      id: req_3a58827acb044c8db78694df1abc5765
+      created: 1770154233653
+      modified: 1770163359237
+      isPrivate: false
+      sortKey: -1770154233653
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "titulo": "Análise de Processo 123",
+          "descricao": "Verificar prazos e documentos anexos.",
+          "criado_por": "Dr. Silva",
+        	"status": "Concluida"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://clys7m3he2.execute-api.sa-east-1.amazonaws.com/tasks
+    name: Criar tarefa
+    meta:
+      id: req_f7e49f1dd3694ec0a4ab25dd0932af44
+      created: 1770163052782
+      modified: 1770163327169
+      isPrivate: false
+      sortKey: -1770163052782
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "titulo": "Análise de Processo 123",
+          "descricao": "Verificar prazos e documentos anexos.",
+          "criado_por": "Dr. Silva"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://clys7m3he2.execute-api.sa-east-1.amazonaws.com/tasks
+    name: Listar tarefas
+    meta:
+      id: req_2b5b0e4e120744e6bebd176fa6a0e6f8
+      created: 1770163147710
+      modified: 1770163187897
+      isPrivate: false
+      sortKey: -1770163147710
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://clys7m3he2.execute-api.sa-east-1.amazonaws.com/tasks/id
+    name: Deletar tarefas
+    meta:
+      id: req_c0bcc24b241643479c3e6f9d71388eba
+      created: 1770163189262
+      modified: 1770163223621
+      isPrivate: false
+      sortKey: -1770163189262
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://clys7m3he2.execute-api.sa-east-1.amazonaws.com/tasks/id
+    name: Listar tarefa por id
+    meta:
+      id: req_d9491cfa07cf42c487ab716633f75f77
+      created: 1770163229670
+      modified: 1770163266047
+      isPrivate: false
+      sortKey: -1770163229671
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_75beedfbfa52c20f2126d74ce08ddc0a8dd799aa
+    created: 1770154227361
+    modified: 1770154227361
+environments:
+  name: Base Environment
+  meta:
+    id: env_75beedfbfa52c20f2126d74ce08ddc0a8dd799aa
+    created: 1770154227357
+    modified: 1770154227357
+    isPrivate: false

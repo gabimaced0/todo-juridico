@@ -55,6 +55,19 @@ Documentação da API
 
 ### 1\. Criar Tarefa
 
+Como testar com Insomnia (Recomendado)
+Para facilitar os testes, deixei uma collection pronta configurada.
+
+- Baixe o arquivo insomnia_collection.yaml que está neste repositório.
+
+- Abra o Insomnia.
+
+- Clique em Application -> Preferences -> Data -> Import Data -> From File.
+
+- Selecione o arquivo baixado.
+
+Importante: Nas requisições, substitua a URL base pela URL gerada pelo seu Terraform.
+
 `POST /tasks`
 
 **Corpo da Requisição (JSON):**
