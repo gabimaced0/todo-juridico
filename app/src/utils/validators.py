@@ -4,7 +4,6 @@ from exceptions.invalid_task import InvalidTaskDataException
 def validate_no_empty(value, field_name):
     """
     Valida se uma string não é nula e nem vazia/espaços em branco.
-    Retorna True se estiver válida. Se for inválida, lança exceção.
     """
     if not value or not value.strip():
         raise InvalidTaskDataException(f"O campo '{field_name}' não pode ser vazio.")
