@@ -9,7 +9,7 @@ from enums.task_status import TaskStatus
 from exceptions.task_not_found import TaskNotFoundException
 
 
-class TaskService:
+class DBService:
     """
     Gerencia a lógica de negócio das Tarefas.
     Responsável por validar regras e realizar operações no banco de dados.

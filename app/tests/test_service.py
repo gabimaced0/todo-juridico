@@ -6,7 +6,7 @@ from moto import mock_aws
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
-from service.task_service import TaskService
+from service.db_service import DBService
 from dto.task_dto import CreateTaskRequest, UpdateTaskRequest
 from exceptions.task_not_found import TaskNotFoundException
 
@@ -32,7 +32,7 @@ class TestTaskService(unittest.TestCase):
             ProvisionedThroughput={'ReadCapacityUnits': 1, 'WriteCapacityUnits': 1}
         )
 
-        self.service = TaskService()
+        self.service = DBService()
 
     def test_create_task(self):
         dto = CreateTaskRequest(titulo="Teste Moto", descricao="Real", criado_por="Dev")
